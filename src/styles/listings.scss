@@ -1,0 +1,82 @@
+.list-items {
+  display: flex;
+  margin: 30px;
+}
+
+.list-item {
+  flex-grow: 1;
+  position: relative;
+
+  color: #40444f;
+  font-family: Montserrat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--image {
+    height: 260px;
+    object-fit: contain;
+    width: 200px;
+  }
+
+  &--category {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  &--name, &--price {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &--price {
+    color: #ff6c75;
+  }
+
+  &--new {
+    background-color: #40444f;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    height: 20px;
+    left: 67px;
+    line-height: 20px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 38px;
+  }
+}
+
+.list-item-imageContainer {
+  height: 260px;
+  position: relative;
+  width: 200px;
+
+  .list-item--image {
+    object-fit: contain;
+  }
+
+  .list-item--buyNow {
+    background-color: #40444f;
+    bottom: 9px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  &:hover {
+    .list-item--buyNow {
+      display: block;
+    }
+  }
+}

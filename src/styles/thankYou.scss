@@ -1,0 +1,44 @@
+.thankYouContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  height: 600px;
+}
+
+.thankYou {
+  color: #40444f;
+  display: flex;
+  font-family: Montserrat;
+  height: 364px;
+  width: 420px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  &--title {
+    font-size: 53px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -2.4px;
+  }
+  &--desc {
+    font-size: 16px;
+  }
+
+  &--button {
+    border: 1px solid #40444f;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 50px;
+    height: 50px;
+    width: 190px;
+
+    a {
+      color: #40444f;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
